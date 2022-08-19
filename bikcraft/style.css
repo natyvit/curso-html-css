@@ -2,11 +2,11 @@ body {
   background-color: #f7f7f7;
   font-family: Arial;
   text-align: center;
-  margin: 0px;
+  margin: 0rem;
 }
 
 a {
-  border-radius: 4px;
+  border-radius: 0.25rem;
   text-decoration: none;
   text-align: center;
 }
@@ -17,33 +17,56 @@ img {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
-span{
-  display: block;
-  background-color: #ee2211;
-  height: 4px;
-  width: 60px;
-  position: relative;
-  margin-left: auto;
-  margin-right: -80px;
+aside {
+  margin: auto 2.5rem;
+}
+
+ul {
+  padding: 2.5rem;
+  margin: 0rem;
+}
+
+section {
+  background-color: white;
+}
+
+li:hover {
+  border-left: solid 0.25rem #ee2211;
+}
+
+li:nth-child(odd) {
+  background-color: #f7f7f7;
 }
 
 .links-itens {
   background-color: white;
-  padding: 15px 40px;
+  padding: 0.9375rem 2.5rem;
   color: black;
-  width: 60px;
-  margin: 0px 10px;
+  width: 3.75rem;
+  margin: 0rem 0.625rem;
+  cursor: pointer;
+  border: solid 0.125rem white;
+}
+
+.links-itens:hover {
+  border: solid 0.125rem;
+  border-color: #ee2211;
+  border-radius: 0.25rem;
 }
 
 .botao-vermelho {
   display: inline-block;
   background-color: #ee2211;
   color: white;
-  padding: 15px 30px;
-  margin-top: 10px;
+  padding: 0.9375rem 1.875rem;
+  margin-top: 0.625rem;
+}
+
+.botao-vermelho:hover {
+  background-color: #900;
 }
 
 .links {
@@ -53,34 +76,35 @@ span{
 }
 
 .itens {
-  width: 1000px;
+  width: 62.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 
 .caixa1 {
   background-color: white;
-  padding: 50px;
+  padding: 3.125rem;
   text-align: right;
+  position: relative;
 }
 
 .caixa2 {
   background-color: white;
-  padding: 40px;
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 2.5rem 1fr;
+  border-left: 4px solid transparent;
 }
 
 .texto-interno {
   text-align: left;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .subtitulo {
-  margin: auto 40px;
-  font-size: 64px;
+  background-image: url(../img/onda.svg);
+  font-size: 4rem;
   text-align: right;
   color: #c6c6c6;
 }
@@ -88,16 +112,27 @@ span{
 .rodape {
   background-color: white;
   display: grid;
-  padding: 40px;
-  margin: 0px;
-  margin-top: 50px;
+  padding: 2.5rem;
+  margin: 0rem;
+  margin-top: 3.125rem;
 }
 
 .titulo {
-  margin: 50px;
+  margin: 3.125rem;
 }
 
-.img-interna{
+.img-interna {
   margin-left: auto;
-  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+
+.detalhe::before {
+  content: "";
+  display: block;
+  background-color: #ee2211;
+  height: 0.25rem;
+  width: 3.75rem;
+  position: absolute;
+  top: 30px;
+  right: -30px;
 }
