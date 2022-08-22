@@ -5,6 +5,10 @@ body {
   margin: 0rem;
 }
 
+main {
+  margin-top: 3.75rem;
+}
+
 a {
   border-radius: 0.25rem;
   text-decoration: none;
@@ -13,32 +17,54 @@ a {
 
 img {
   max-width: 100%;
-  grid-column: 2;
 }
 
 p {
   font-size: 1.25rem;
 }
 
-aside {
-  margin: auto 2.5rem;
-}
-
 ul {
-  padding: 2.5rem;
+  list-style: none;
   margin: 0rem;
+  padding: 0rem;
 }
 
-section {
+.caixa2 {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+}
+
+.caixa2:hover {
+  border-left: solid 0.25rem #ee2211;
+}
+
+.ul-caixa2 {
+  padding: 2.5rem;
   background-color: white;
 }
 
-li:hover {
-  border-left: solid 0.25rem #ee2211;
+.vantagens {
+  margin: auto 2.5rem;
+  background-image: url(../img/onda.svg);
 }
 
 li:nth-child(odd) {
   background-color: #f7f7f7;
+}
+
+.textos1 h1 {
+  font-size: 2rem;
+}
+
+.titulo {
+  margin: 3.125rem;
+}
+
+.links {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
 }
 
 .links-itens {
@@ -69,18 +95,11 @@ li:nth-child(odd) {
   background-color: #900;
 }
 
-.links {
-  margin: auto;
-  grid-template-columns: repeat(4, 1fr);
-  text-align: center;
-}
-
 .itens {
   width: 62.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
-  margin-top: 3.75rem;
 }
 
 .caixa1 {
@@ -90,20 +109,17 @@ li:nth-child(odd) {
   position: relative;
 }
 
-.caixa2 {
-  background-color: white;
-  display: grid;
-  grid-template-columns: 2.5rem 1fr;
-  border-left: 4px solid transparent;
-}
-
 .texto-interno {
   text-align: left;
   margin-left: 1.25rem;
 }
 
+.img-interna {
+  margin-left: auto;
+  margin-top: 1.25rem;
+}
+
 .subtitulo {
-  background-image: url(../img/onda.svg);
   font-size: 4rem;
   text-align: right;
   color: #c6c6c6;
@@ -117,15 +133,6 @@ li:nth-child(odd) {
   margin-top: 3.125rem;
 }
 
-.titulo {
-  margin: 3.125rem;
-}
-
-.img-interna {
-  margin-left: auto;
-  margin-top: 1.25rem;
-}
-
 .detalhe::before {
   content: "";
   display: block;
@@ -135,4 +142,44 @@ li:nth-child(odd) {
   position: absolute;
   top: 30px;
   right: -30px;
+}
+
+@media (min-width: 23.375rem) and (max-width: 90rem) {
+  .itens {
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: center;
+  }
+  .detalhe {
+    display: none;
+  }
+  .vantagens {
+    margin: 0rem;
+  }
+  .subtitulo {
+    font-size: 3.4375rem;
+    text-align: center;
+  }
+  .ul-caixa2 {
+    padding: 1.875rem;
+  }
+  .caixa1 {
+    text-align: left;
+  }
+  .titulo {
+    margin: 2.5rem;
+  }
+  .rodape {
+    margin-top: 1.875rem;
+    padding: 1.875rem;
+  }
+  .links {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.125rem 0rem;
+  }
+  .caixa1{
+    padding: 1.875rem;
+  }
 }
