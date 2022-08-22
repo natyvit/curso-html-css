@@ -9,65 +9,71 @@
 </head>
 
 <body>
-  <img class="titulo" src="./img/bikcraft.svg" alt="">
-  <header class="links">
+  <header>
+    <img class="titulo" src="./img/bikcraft.svg" alt="">
     <nav aria-label="primaria">
-      <a class="links-itens" href="/">SOBRE</a>
-      <a class="links-itens" href="/">PRODUTOS</a>
-      <a class="links-itens" href="/">LOJAS</a>
-      <a class="links-itens" href="/">CONTATO</a>
+      <ul class="links">
+        <li><a class="links-itens" href="/">SOBRE</a></li>
+        <li><a class="links-itens" href="/">PRODUTOS</a></li>
+        <li><a class="links-itens" href="/">LOJAS</a></li>
+        <li><a class="links-itens" href="/">CONTATO</a></li>  
+      </ul>
     </nav>
   </header>
 
-  <div class="itens">
-    <div class="caixa1">
-      <h1 class="detalhe"></h1>
-      <div class="textos1">
-        <main>
-          <h1>Bicicletas Feitas a Mão</h1>
+  <main>
+    <article class="itens">
+      <div class="caixa1" aria-labelledby="label-introducao">
+        <h1 class="detalhe"></h1>
+        <div class="textos1">
+
+          <h1 id="label-introducao">Bicicletas Feitas a Mão</h1>
           <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
           <a class="botao-vermelho" href="/">VER MAIS</a>
-        </main>
+        </div>
       </div>
-    </div>
-    <img src="./img/bicicleta.jpg" alt="">
-    <aside>
-      <h1 class="subtitulo">VANTAGENS BIKCRAFT</h1>
-    </aside>
-    <section>
-      <ul>
-        <li class="caixa2">
-          <div class="img-interna">
-            <img class="imgens" src="./img/eletrica.svg" alt="">
-          </div>
-          <div class="texto-interno">
-            <h3>Motor Elétrico</h3>
-            <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-          </div>
-        </li>
+      <img src="./img/bicicleta.jpg" alt="">
+    </article>
+    <article class="itens" aria-labelledby="label-vantagens">
+      <div class="vantagens">
+        <h2 class="subtitulo" id="label-vantagens">VANTAGENS BIKCRAFT</h2>
+      </div>
+      <section>
+        <ul class="ul-caixa2">
+          <li class="caixa2">
+            <div class="img-interna">
+              <img class="imgens" src="./img/eletrica.svg" alt="">
+            </div>
+            <div class="texto-interno">
+              <h3>Motor Elétrico</h3>
+              <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+            </div>
+          </li>
 
-        <li class="caixa2">
-          <div class="img-interna">
-            <img class="imgens" src="./img/velocidade.svg" alt="">
-          </div>
-          <div class="texto-interno">
-            <h3>40 km/h</h3>
-            <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-          </div>
-        </li>
+          <li class="caixa2">
+            <div class="img-interna">
+              <img class="imgens" src="./img/velocidade.svg" alt="">
+            </div>
+            <div class="texto-interno">
+              <h3>40 km/h</h3>
+              <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+            </div>
+          </li>
 
-        <li class="caixa2">
-          <div class="img-interna">
-            <img class="imgens" src="./img/rastreador.svg" alt="">
-          </div>
-          <div class="texto-interno">
-            <h3>Rastreador</h3>
-            <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </div>
+          <li class="caixa2">
+            <div class="img-interna">
+              <img class="imgens" src="./img/rastreador.svg" alt="">
+            </div>
+            <div class="texto-interno">
+              <h3>Rastreador</h3>
+              <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
   <footer>
     <p class="rodape">Bikcraft. Alguns Direitos Reservados.</p>
   </footer>
